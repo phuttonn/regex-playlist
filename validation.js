@@ -7,7 +7,12 @@ const patterns = {
 
 // validation function
 function validate(field, regex){
-    console.log(regex.test(field.value));
+    //testing regex
+    if(regex.test(field.value)){
+        field.className = 'valid';
+    } else {
+        field.className = 'invalid';
+    }
 }
 
 inputs.forEach((input) => {
