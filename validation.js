@@ -1,4 +1,4 @@
 // validation script here
 const patterns = {
-    telephone: 
+    telephone: /^\d{11}$/
 }
